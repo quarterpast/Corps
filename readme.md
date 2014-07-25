@@ -1,4 +1,4 @@
-# Corps
+# Corps [![Build Status](https://travis-ci.org/quarterto/Corps.svg)](https://travis-ci.org/quarterto/Corps)
 
 Streaming HTTP request body parser
 
