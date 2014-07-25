@@ -5,7 +5,7 @@ qs = require \qs
 export body-params = (parser, req)-->
 	σ req .flat-map parser
 
-handle-error = (f, x)--> σ [null] .map -> f x
+export handle-error = (f, x)--> σ [null] .map -> f x
 
 export json-parse  = handle-error JSON.parse
 export query-parse = handle-error qs.parse
