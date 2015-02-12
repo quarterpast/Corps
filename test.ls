@@ -1,7 +1,7 @@
 require! {
 	'expect.js'
-	body: './index.js'
-	σ: highland
+	'./index.js': body
+	highland: σ
 }
 
 Stream = σ!constructor # sigh
