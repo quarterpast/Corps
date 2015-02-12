@@ -19,4 +19,5 @@ export mime-parsers =
 	\application/x-www-form-urlencoded : query
 
 export auto = (req)->
+	req.set-encoding? \utf8
 	req |> mime-parsers[req.headers.'content-type'] ? raw
