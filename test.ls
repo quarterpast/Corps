@@ -76,3 +76,12 @@ export
 			body.auto req .to-array (xs)->
 				expect xs.0 .to.be 'hello'
 				done!
+
+		"calls setEncoding if it's there": (done)->
+			req = σ ['hello']
+			req.headers = 'content-type': \application/json
+			req.set-encoding = ->
+				expect it .to.be \utf8
+				done!
+
+			body.auto req .resume!
