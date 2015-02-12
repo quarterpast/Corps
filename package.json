@@ -1,6 +1,6 @@
 {
   "name": "corps",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Streaming http body parser",
   "main": "index.js",
   "scripts": {
